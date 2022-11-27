@@ -48,7 +48,7 @@ YoloObjectDetector::YoloObjectDetector()
   declare_parameter("yolo_model.config_file.name", std::string("yolov2-tiny.cfg"));
   declare_parameter("config_path", std::string("/default"));
 
-  declare_parameter("subscribers.camera_reading.topic", std::string("/camera/image_raw"));
+  declare_parameter("subscribers.camera_reading.topic", std::string("rs/color/compressed"));
   declare_parameter("subscribers.camera_reading.queue_size", 1);
   declare_parameter("publishers.object_detector.topic", std::string("found_object"));
   declare_parameter("publishers.object_detector.queue_size", 1);
